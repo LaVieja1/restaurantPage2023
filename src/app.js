@@ -1,3 +1,5 @@
+import cargarHome from "./home";
+
 function createHeader() {
     const header = document.createElement('header');
     header.classList.add('header');
@@ -21,6 +23,7 @@ function createNav() {
     homeButton.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;
         setActiveButton(homeButton);
+        cargarHome();
     });
 
     const menuButton = document.createElement('button');
@@ -86,6 +89,7 @@ function startWebsite() {
     content.appendChild(createFooter());
 
     setActiveButton(document.querySelector('.button-nav'));
+    cargarHome();
 }
 
 export default startWebsite();
