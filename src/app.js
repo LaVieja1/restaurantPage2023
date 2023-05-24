@@ -58,10 +58,34 @@ function setActiveButton(button) {
     button.classList.add('active');
 }
 
+function createMain() {
+    const main = document.createElement('main');
+    main.classList.add('main');
+    main.setAttribute('id', 'main');
+    return main;
+}
+
+function createFooter() {
+    const footer = document.createElement('footer');
+    footer.classList.add('footer');
+
+    const link = document.createElement('a');
+    link.textContent = 'Santiago Cano 2023';
+    link.href = 'https://github.com/LaVieja1';
+
+    footer.appendChild(link);
+
+    return footer;
+}
+
 function startWebsite() {
     const content = document.getElementById('content');
 
     content.appendChild(createHeader());
+    content.appendChild(createMain());
+    content.appendChild(createFooter());
+
+    setActiveButton(document.querySelector('.button-nav'));
 }
 
 export default startWebsite();
