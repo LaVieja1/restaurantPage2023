@@ -3,7 +3,7 @@ function createHome() {
     home.classList.add('home');
 
     const placeImage = document.createElement('img');
-    placeImage.src = './304d1c559c32606da7f6.jpg'
+    placeImage.src = 'img/background1.jpg';
     //placeImage.src = '../src/img/background1.jpg'
     placeImage.alt = 'Restaurante W';
 
