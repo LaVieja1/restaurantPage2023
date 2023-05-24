@@ -1,11 +1,9 @@
-import Image1 from './img/background1.jpg';
-
 function createHome() {
     const home = document.createElement('div');
     home.classList.add('home');
 
     const placeImage = document.createElement('img');
-    placeImage.src = Image1;
+    placeImage.src = '../src/img/background1.jpg'
     placeImage.alt = 'Restaurante W';
 
     home.appendChild(createParagraph('El restaurante mas reconocido del país'));

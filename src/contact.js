@@ -1,5 +1,3 @@
-import Map from './img/map.png';
-
 function createContact() {
     const contact = document.createElement('div');
     contact.classList.add('contact');
@@ -11,7 +9,7 @@ function createContact() {
     adress.textContent = 'Dirección: Mariano Acosta 153, Monte Grande, Buenos Aires';
 
     const adressPic = document.createElement('img');
-    adressPic.src = Map;
+    adressPic.src = '../src/img/map.png';
     adressPic.alt = 'Restaurante W dirección Google Maps';
     
     contact.appendChild(numTel);
