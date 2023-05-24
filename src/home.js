@@ -22,10 +22,10 @@ function createParagraph(text) {
     return paragraph;
 }
 
-function cargarHome() {
+function loadHome() {
     const main = document.getElementById('main');
     main.textContent = '';
     main.appendChild(createHome());
 }
 
-export default cargarHome;
+export default loadHome;
